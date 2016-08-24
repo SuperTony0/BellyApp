@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#main'
+  get 'pages/yelp_request' => 'pages#yelp_request'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
