@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'figaro'
+
 gem 'bootstrap', '~> 4.0.0.alpha3.1'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'

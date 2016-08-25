@@ -1,10 +1,11 @@
+<div class="row place head" >
+  <h1> Locations </h1>
+  <button onClick="getLocation()"> See Map </button>
+  <button onClick="getPlaces()"> See List </button>
+
+</div>
 <div class="row" >
-  <div class='col-xs-4 offset-xs-4'>
-    <h1> Location Data </h1>
-    <button onClick="getLocation()"> Get Location </button>
-    <button onClick="getPlaces()"> Get Places </button>
-  </div>
-    <p id="mapholder"> No Location Yet </p>
-
-
+  <div id="loader" class="loader"></div>
+  <div id='places-near'> </div>
+  <div id="mapholder"> TEST  </div>
 </div>

@@ -16,3 +16,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+var markers = [];
+document.on('ready', getPlaces());
