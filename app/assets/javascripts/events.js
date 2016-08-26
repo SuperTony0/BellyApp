@@ -19,9 +19,7 @@ function showPlaces(position) {
       longitude: lon
     },
     success: function(result){
-      console.log(result.businesses[0].location.coordinate);
       displayPlaces(result);
-      console.log(markers);
     }
   });
 

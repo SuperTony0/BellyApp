@@ -3,14 +3,15 @@ function displayPlaces (places){
   var count = 0;
   for (count = 0; count <10; count ++){
     createBiz(places,count);
-    //console.log(places.businesses[count].name);
   }
 }
 
 function createBiz(places,count) {
   var biz = places.businesses[count];
-  markers.push(biz.location.coordinate);
   var name = biz.name;
+  var mark = {title: name, lat: biz.location.coordinate.latitude, lon: biz.location.coordinate.longitude};
+  markers.push(mark);
+
   var image = biz.image_url;
   var distance = Math.round(biz.distance/100)/10;
 
